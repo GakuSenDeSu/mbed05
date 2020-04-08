@@ -9,5 +9,6 @@ void blink(){
 
 int main(){
     time_up.attach( &blink, 0.2 );
+    //This program switches the LED every 200ms, using Timeout rather than a wait( ) function. 
     while(1);
 }
