@@ -14,5 +14,6 @@ void toggle(){
 int main(){
     debounce.start();
     button.rise(&toggle);
-    while(1);
+    //Interrupt run LED state, and toggle use Timer to sure button stability.
+    while(1); // Keep LED state
 }
