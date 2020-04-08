@@ -13,7 +13,7 @@ void blink(){
 int main(){
     for( redLED=1; ; ){
         if(button==0){
-            tout.attach( &blink, 2.0);
+            tout.attach( &blink, 2.0); // if SW2 is pushed, it will shine after 2 sec because of Timeout.
         }
         wait(0.2);
     }
